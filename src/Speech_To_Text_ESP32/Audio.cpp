@@ -1,4 +1,5 @@
 #include "Audio.h"
+#include "I2S.h"
 
 Audio::Audio(MicType micType) {
   wavData = new char*[wavDataSize/dividedWavDataSize];

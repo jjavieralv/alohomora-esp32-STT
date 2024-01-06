@@ -1,5 +1,5 @@
 #include <Arduino.h>
-// Use board library esp32 form Espressif Systems version 1.0.6
+// Use board library esp32 by Espressif Systems version 1.0.6
 // Additional boards manager URL: https://github.com/espressif/arduino-esp32/releases/download/1.0.6/package_esp32_index.json
 
 #include "VL53L0X.h"
@@ -13,7 +13,7 @@
 #define TIME_MOVING 3000
 
 VL53L0X dist_sensor;
-String door_password="remueve la leche";
+String door_password="campurrianas de chocolate";
 const int freq = 500;
 const int resolution = 8;
 
@@ -58,7 +58,7 @@ void loop() {
     // Recording audio
     digitalWrite(32, HIGH);
     Serial.println("\r\nRecord start!\r\n");
-    Audio* audio = new Audio(ICS43434);
+    Audio* audio = new Audio(ADMP441);
     //Audio* audio = new Audio(M5STACKFIRE);
     audio->Record();
     digitalWrite(32, LOW);
